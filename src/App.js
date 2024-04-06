@@ -10,6 +10,9 @@ import EmployeeInfoForm from "./components/EmployeeCreateInfo";
 import Home from "./components/Home";
 import Register from "./components/Register";
 import Login from "./components/Login";
+import MyEmployee from "./components/HR/myEmployees/MyEmployee";
+import EmployeeProfile from "./components/Employee/Dashboard";
+import Dashboard from "./components/Employee/Dashboard";
 
 const App = () => {
   const { setUser, setIsAuthenticated, isAuthenticated, setLoading } =
@@ -35,15 +38,17 @@ const App = () => {
 
   return (
     <div className="bg-gray-50">
-      <Router>
-        <Routes>
+      {/* <Router> */}
+        {/* <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/employee/:id" element={<Dashboard/>}></Route>
         </Routes>
         <Toaster />
-      </Router>
-      <EmployeeInfoForm />
+      </Router> */}
+      {/* <EmployeeInfoForm /> */}
+      <Dashboard />
     </div>
   );
 };
