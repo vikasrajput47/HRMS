@@ -1,0 +1,11 @@
+/* styles.css */
+
+body {
+    background-image: url('./components/image/bgImg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* Ensure the background covers the entire viewport height */
+    margin: 0;
+    /* Remove default body margin */
+}
